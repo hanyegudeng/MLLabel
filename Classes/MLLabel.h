@@ -18,6 +18,8 @@ typedef NS_ENUM(NSUInteger, MLLastTextType) {
 
 @property (nonatomic, assign) UIEdgeInsets textInsets;
 
+@property (nonatomic, assign) CGFloat lineSpacing;
+
 @property (nonatomic, copy) void(^doBeforeDrawingTextBlock)(CGRect rect,CGPoint beginOffset,CGSize drawSize);
 
 - (CGSize)preferredSizeWithMaxWidth:(CGFloat)maxWidth withHeight:(CGFloat)height;

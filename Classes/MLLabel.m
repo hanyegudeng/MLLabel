@@ -283,7 +283,7 @@ static NSArray * kStylePropertyNames() {
     //水平位置
     NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc] init];
     paragraph.alignment = _styleRecord.textAlignment;
-    
+    paragraph.lineSpacing = (_lineSpacing == 0?5:_lineSpacing);
     if (!_styleRecord.font) {
         _styleRecord.font = [UIFont systemFontOfSize:17.0f];
     }
