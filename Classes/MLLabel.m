@@ -547,9 +547,9 @@ static NSArray * kStylePropertyNames() {
     return size;
 }
 
-- (CGSize)preferredSizeWithMaxWidth:(CGFloat)maxWidth
+- (CGSize)preferredSizeWithMaxWidth:(CGFloat)maxWidth withHeight:(CGFloat)height
 {
-    CGSize size = [self sizeThatFits:CGSizeMake(maxWidth, MLFLOAT_MAX)];
+    CGSize size = [self sizeThatFits:CGSizeMake(maxWidth, height)];
     size.width = MIN(size.width, maxWidth); //在numberOfLine为1模式下返回的可能会比maxWidth大，所以这里我们限制下
     return size;
 }

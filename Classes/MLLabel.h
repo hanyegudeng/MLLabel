@@ -20,7 +20,7 @@ typedef NS_ENUM(NSUInteger, MLLastTextType) {
 
 @property (nonatomic, copy) void(^doBeforeDrawingTextBlock)(CGRect rect,CGPoint beginOffset,CGSize drawSize);
 
-- (CGSize)preferredSizeWithMaxWidth:(CGFloat)maxWidth;
+- (CGSize)preferredSizeWithMaxWidth:(CGFloat)maxWidth withHeight:(CGFloat)height;
 
 
 //方便码代码
